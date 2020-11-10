@@ -1,11 +1,15 @@
 package com;
 
+import java.util.ArrayList;
+
+
 public class Product {
     private String name;
     private float carbo;
     private float protein;
     private float fat;
     private int kcal;
+
 
     public Product(String name, float carbo, float protein, float fat, int kcal) {
         this.name = name;
@@ -54,4 +58,10 @@ public class Product {
     public void setKcal(int kcal) {
         this.kcal = kcal;
     }
+
+    public String toString(){
+        return "Name: " + name + " kcal: " + kcal + " carbo: " + carbo + " protein: " + protein + " fat: " + fat;
+    }
+
+
 }
